@@ -1,6 +1,6 @@
 # MATRIX-BOOT-ME
 
-> 💻 A Matrix-style boot sequence generator written in Python — perfect for intros, resumes, or terminal-style animations.
+> 💻 A futuristic boot sequence generator written in Python — perfect for intros, resumes, or terminal-style animations.
 
 ![sample](sample/hybrid_typing_intro.gif)
 
@@ -8,8 +8,8 @@
 
 ## ✨ Overview
 
-`MATRIX-BOOT-ME` is a simple Python script that generates a boot-sequence-style animated GIF — inspired by classic terminal aesthetics and *The Matrix*.  
-It simulates a futuristic neural system startup and shutdown, complete with personalized identity, tech stack, and contact info — typed out character by character.
+`MATRIX-BOOT-ME` is a lightweight Python script that generates a terminal-inspired animated GIF, simulating a neural system startup and shutdown.  
+It features personalized identity, tech stack, and contact information — all typed out character by character in a retro-futuristic terminal aesthetic.
 
 ---
 
