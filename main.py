@@ -88,7 +88,7 @@ LOCATION: South Korea
 RESUME  : github.com/blackJJW/resume
 BLOG    : blackjjw.github.io
 EMAIL   : jjinwoo92@gmail.com
-""".strip("\n") + "\n\n"
+""".strip("\n") + "\n"
 
 for i in range(1, len(main_text) + 1):
     for blink in [True, False]:
@@ -99,7 +99,7 @@ for i in range(1, len(main_text) + 1):
 # ====== Scramble Animation ====== #
 scramble_base = "[SEC ] Scrambling credentials..."
 scramble_blocks = 10
-scramble_prefix = boot_text + main_text.strip().splitlines() + ["[CORE] Disengaging autonomous agent..."]
+scramble_prefix = boot_text + main_text.splitlines() + ["", "[CORE] Disengaging autonomous agent..."]
 
 for i in range(1, scramble_blocks + 1):
     line = f"{scramble_base} {'█ ' * i}".strip()
