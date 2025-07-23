@@ -7,7 +7,7 @@ import shutil
 OUTPUT_DIR = "frames"
 GIF_PATH = "output.gif"
 IMAGE_WIDTH = 5
-IMAGE_HEIGHT = 3
+IMAGE_HEIGHT = 2
 FONT_SIZE = 10
 FONT_COLOR = "#00FF00"
 FONT_FAMILY = "monospace"
