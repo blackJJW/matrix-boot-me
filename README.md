@@ -18,6 +18,12 @@ It features personalized identity, tech stack, and contact information — all t
 Install the required packages with:
 
 ```bash
+pip install matplotlib pillow
+```
+
+or
+
+```bash
 pip install -r requirements.txt
 ```
 
