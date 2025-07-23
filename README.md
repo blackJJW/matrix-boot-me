@@ -2,7 +2,7 @@
 
 > 💻 A futuristic boot sequence generator written in Python — perfect for intros, resumes, or terminal-style animations.
 
-![sample](sample/hybrid_typing_intro.gif)
+![sample](sample/output.gif)
 
 ---
 
@@ -40,7 +40,7 @@ python main.py
 The generated animation will be saved as:
 
 ```txt
-hybrid_typing_intro.gif
+output.gif
 ```
 
 ---
@@ -51,37 +51,44 @@ You can easily configure the following in `main.py`:
 
 ### 🔹 Boot / Shutdown Messages
 
-Modify the `boot_lines`, `boot_continue`, and `shutdown_lines` lists to customize the startup and shutdown sequences.
+Modify the `BOOT_LINES`, `CONTINUE_LINES`, `DISENGAGE_LINE`, and `SHUTDOWN_LINES` constants to customize the startup and shutdown sequences.
 
 ### 🔹 Personal Information
 
-Edit the `main_text` block to include your name, title, links, contact details, or anything else you’d like to type out character by character.
+Edit the `MAIN_INFO` constant to include your name, title, links, contact details, or anything else you’d like to type out character by character.
 
 ### 🔹 Encryption / Scrambling Animation
 
-Adjust `encrypt_base`, `scramble_base`, `num_blocks`, or even replace the animation style with your own.
+Customize the animation blocks by changing:
+
+- `ENCRYPT_BASE`, `SCRAMBLE_BASE` (messages shown)
+- Block count in `render_block_animation()` calls
 
 ### 🔹 Typing & Animation Speeds
 
-Customize frame delays using constants like:
+Control the animation pacing using constants:
 
-- `TYPING_SPEED`  
-- `ENCRYPT_SPEED`  
-- `SCRAMBLE_SPEED`  
-- `SHUTDOWN_SPEED`  
+- `TYPING_SPEED`
+- `ENCRYPT_SPEED`
+- `SCRAMBLE_SPEED`
+- `SHUTDOWN_SPEED`
 - `FINAL_HOLD_DURATION`
+
+> 💡 Smaller speed values result in faster animation.
 
 ### 🔹 Visual Style
 
-Tweak the visual presentation via:
+Modify visual output using:
 
-- `FONT_COLOR`, `BG_COLOR`, `FONT_SIZE`, `FONT_FAMILY`  
-- Terminal size: `IMAGE_WIDTH`, `IMAGE_HEIGHT`  
-- Line limit: `MAX_VISIBLE_LINES`
+- `FONT_COLOR`, `BG_COLOR`, `FONT_SIZE`, `FONT_FAMILY`
+- Output size: `IMAGE_WIDTH`, `IMAGE_HEIGHT`
+- Max visible lines: `MAX_VISIBLE_LINES`
+- Typing cursor character (inside `render_typing_animation`)
 
 ### 🔹 GIF Output & Frame Handling
 
-Change the output filename via `GIF_PATH`, or disable cleanup by commenting out the `shutil.rmtree()` call at the end of the script.
+Set the output path using `GIF_PATH`.  
+Temporary frame images are cleaned up automatically — comment out the `shutil.rmtree()` line to keep them.
 
 ## 📄 License
 
