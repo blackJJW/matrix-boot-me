@@ -85,4 +85,4 @@ Change the output filename via `GIF_PATH`, or disable cleanup by commenting out 
 
 ## 📄 License
 
-MIT License
+[MIT License](LICENSE)
